@@ -1,0 +1,8 @@
+const donasi = (pushname, prefix, botName, ownerName) => { 
+	return `Salve meu mano, ${pushname} 👋
+Você quer doar?
+ Cuidado com o fogo, mesmo que você tenha um pedaço de tâmaras. Aquele que não encontra uma boa palavra
+_ “Afastai-vos do fogo do inferno, nem que seja dando esmola (um pouco). Se não tiver, pode ser com a palavra thayyibah "[HR. Bukhari 6539, Muslim 1016] _
+}
+
+exports.donasi = donasi

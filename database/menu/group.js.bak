@@ -1,0 +1,37 @@
+const groupm = (pushname, prefix, botName, ownerName, getLevelingLevel, sender, _registered) => {
+	return `🔰 -----[ *𝐇𝐄𝐋𝐋𝐁𝐎𝐓* ]----- 🔰
+SALVE MEU MANO, ${pushname} 😈
+TENHA UM BOM USO🐊, ${sender.split("@")[0]}
+┏━━━━━━━━━━━━━━━━━━━━┓
+┃╭───────────────────
+┃│➸ NOME : ${pushname}
+┃│➸ NÍVEL : ${getLevelingLevel(sender)}
+┃│➸ USER ${botName} : ${_registered.length}
+┃╰───────────────────
+┗━━━━━━━━━━━━━━━━━━━━┛
+𝘼𝙌𝙐𝙄 𝙀𝙎𝙏𝘼𝙊 𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀𝙎𝙏𝙀 𝘽𝙊𝙏! 🤪𝙎𝙀 𝙑𝙊𝘾𝙀 𝙉𝘼𝙊 𝙀𝙉𝙏𝙀𝙉𝘿𝙀, 𝘿𝙄𝙂𝙄𝙏𝙀 *${prefix}bingungcok*
+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐏𝐑𝐎 𝐆𝐑𝐔𝐏𝐎🌞
+
+➸ *${prefix}welcome* 「1/0」(BEM VINDO😈)
+➸ *${prefix}leveling* 「1/0」(XP)
+➸ *${prefix}simih* 「1/0」(TOMANOCUKKKKKKKKK)
+➸ *${prefix}nsfw* 「1/0」(eita 😳)
+➸ *${prefix}antilinkgrup* 「1/0」(SEM PRETO MANDANDO LINK)
+➸ *${prefix}grup* 「buka/tutup」(FECHAR O GRUPO/ABRIR)
+➸ *${prefix}kick*
+➸ *${prefix}hedsot*
+➸ *${prefix}linkgrup*
+➸ *${prefix}promote* (DAR ADM)
+➸ *${prefix}demote* (TIRAR ADM)
+➸ *${prefix}setname* (MUDAR O NOME DO GRUPO)
+➸ *${prefix}setdesc* (MUDAR A DESCRIÇÃO)
+➸ *${prefix}leave* (SE VC GOSTA DO BOT, NÃO USE ISSO)
+➸ *${prefix}tagall* (DEIXAR OS MEMBROS PUTOS😳)
+➸ *${prefix}admin* (LISTA DE ADM)
+➸ *${prefix}level*
+➸ *${prefix}fitnah*
+➸ *${prefix}hidetag* (MANDAR MENSAGEM PRA GERAL)
+	
+🔰 -----[ *POWERED BY ${.᮫ׁׁ໋໋᳝᳝𝒂𝒍𝒊𝒛𝒖.᮫ׁׁ໋໋᳝᳝🛸.ׁ໋}* ]----- 🔰`
+}
+exports.groupm = groupm

@@ -1,0 +1,31 @@
+const sound = (pushname, prefix, botName, ownerName, getLevelingLevel, sender, _registered) => {
+	return `🔰 -----[ *.ׁ໋𝒂𝒍𝒊𝒛𝒖.᮫ׁׁ໋໋᳝᳝🛸.ׁ໋.* ]----- 🔰
+SALVE MEU MANO, ${pushname} 😈
+TENHA UM BOM USO🐊, ${sender.split("@")[0]}
+┏━━━━━━━━━━━━━━━━━━━━┓
+┃╭───────────────────
+┃│➸ NOME : ${pushname}
+┃│➸ NÍVEL : ${getLevelingLevel(sender)}
+┃│➸ USER ${botName} : ${_registered.length}
+┃╰───────────────────
+┗━━━━━━━━━━━━━━━━━━━━┛
+𝘼𝙌𝙐𝙄 𝙀𝙎𝙏𝘼𝙊 𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀𝙎𝙏𝙀 𝘽𝙊𝙏! 🤪𝙎𝙀 𝙑𝙊𝘾𝙀 𝙉𝘼𝙊 𝙀𝙉𝙏𝙀𝙉𝘿𝙀, 𝘿𝙄𝙂𝙄𝙏𝙀 *${prefix}bingungcok*
+
+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐄 𝐌𝐔𝐒𝐈𝐂𝐀𝐒🎶
+
+➸ *${prefix}iri*
+➸ *${prefix}pale*
+➸ *${prefix}sound1*
+➸ *${prefix}sound2*
+➸ *${prefix}sound3*
+➸ *${prefix}sound4*
+➸ *${prefix}sound5*
+➸ *${prefix}sound6*
+➸ *${prefix}sound7*
+➸ *${prefix}sound8*
+➸ *${prefix}sound9*
+➸ *${prefix}sound10*
+
+🔰 -----[ *POWERED BY ${.ׁ໋𝒂𝒍𝒊𝒛𝒖.᮫ׁׁ໋໋᳝᳝🛸.ׁ໋.}* ]----- 🔰`
+}
+exports.sound = sound

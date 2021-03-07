@@ -1,0 +1,40 @@
+const vip = (pushname, prefix, botName, ownerName, getLevelingLevel, sender, _registered) => {
+	return `🔰 -----[ *PREMIUM MENU* ]----- 🔰
+SALVE MEU MANO, ${pushname} 😈
+TENHA UM BOM USO🐊, ${sender.split("@")[0]}
+┏━━━━━━━━━━━━━━━━━━━━┓
+┃╭───────────────────
+┃│➸ NOME : ${pushname}
+┃│➸ NÍVEL : ${getLevelingLevel(sender)}
+┃│➸ USER ${botName} : ${_registered.length}
+┃╰───────────────────
+┗━━━━━━━━━━━━━━━━━━━━┛
+𝘼𝙌𝙐𝙄 𝙀𝙎𝙏𝘼𝙊 𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀𝙎𝙏𝙀 𝘽𝙊𝙏! 🤪𝙎𝙀 𝙑𝙊𝘾𝙀 𝙉𝘼𝙊 𝙀𝙉𝙏𝙀𝙉𝘿𝙀, 𝘿𝙄𝙂𝙄𝙏𝙀 *${prefix}bingungcok*
+
+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐏𝐑𝐄𝐌𝐈𝐔𝐌💵
+
+➸ *${prefix}premiumlist*
+➸ *${prefix}randomhentong*
+➸ *${prefix}bokep*
+➸ *${prefix}blowjob*
+➸ *${prefix}nulis1*
+➸ *${prefix}nulis2*
+➸ *${prefix}play*
+➸ *${prefix}mutual*
+➸ *${prefix}next*
+➸ *${prefix}nangis*
+➸ *${prefix}cium*
+➸ *${prefix}peluk*
+➸ *${prefix}tomp3*
+➸ *${prefix}slowmo*
+➸ *${prefix}ngebass*
+➸ *${prefix}gemok*
+➸ *${prefix}tupai*
+➸ *${prefix}hidetag5*
+➸ *${prefix}hidetag10*
+➸ *${prefix}moddroid*
+➸ *${prefix}happymod*
+
+🔰 -----[ *POWERED BY ${.ׁ໋𝒂𝒍𝒊𝒛𝒖.᮫ׁׁ໋໋᳝᳝🛸.ׁ໋.}* ]----- 🔰`
+}
+exports.vip = vip

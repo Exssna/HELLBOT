@@ -1,0 +1,28 @@
+const maker = (pushname, prefix, botName, ownerName, getLevelingLevel, sender, _registered) => {
+	return `🔰 -----[ *𝐇𝐄𝐋𝐋𝐁𝐎𝐓* ]----- 🔰
+SALVE MEU MANO, ${pushname} 😈
+TENHA UM BOM USO🐊, ${sender.split("@")[0]}
+┏━━━━━━━━━━━━━━━━━━━━┓
+┃╭───────────────────
+┃│➸ NOME : ${pushname}
+┃│➸ NÍVEL : ${getLevelingLevel(sender)}
+┃│➸ USER ${botName} : ${_registered.length}
+┃╰───────────────────
+┗━━━━━━━━━━━━━━━━━━━━┛
+𝘼𝙌𝙐𝙄 𝙀𝙎𝙏𝘼𝙊 𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀𝙎𝙏𝙀 𝘽𝙊𝙏! 🤪𝙎𝙀 𝙑𝙊𝘾𝙀 𝙉𝘼𝙊 𝙀𝙉𝙏𝙀𝙉𝘿𝙀, 𝘿𝙄𝙂𝙄𝙏𝙀 *${prefix}bingungcok*
+
+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐄 𝐋𝐎𝐆𝐎𝐓𝐈𝐏𝐎😈
+
+➸ *${prefix}hartatahta*
+➸ *${prefix}ninjalogo*
+➸ *${prefix}halloweentext*
+➸ *${prefix}pornhub*
+➸ *${prefix}glitchtext*
+➸ *${prefix}blackpink*
+➸ *${prefix}cloudtext*
+➸ *${prefix}neontext*
+➸ *${prefix}textlight*
+
+🔰 -----[ *POWERED BY ${ownerName}* ]----- 🔰`
+}
+exports.maker = maker

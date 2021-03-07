@@ -1,0 +1,194 @@
+const help = (pushname, prefix, botName, ownerName, reqXp, getLevelingLevel, sender, _registered, uangku) => {
+        return `🔰 -----[ *MENU ${𝐇𝐄𝐋𝐋𝐁𝐎𝐓}* ]----- 🔰
+	
+SALVE MEU MANO, ${pushname} 😈
+TENHA UM BOM USO🐊, ${sender.split("@")[0]}
+┏━━━━━━━━━━━━━━━━━━━━┓
+┃╭───────────────────
+┃│➸ NOME : ${pushname}
+┃│➸ NÍVEL : ${getLevelingLevel(sender)}
+┃│➸ USER ${botName} : ${_registered.length}
+┃╰───────────────────
+┗━━━━━━━━━━━━━━━━━━━━┛
+𝘼𝙌𝙐𝙄 𝙀𝙎𝙏𝘼𝙊 𝙊𝙎 𝘾𝙊𝙈𝘼𝙉𝘿𝙊𝙎 𝘿𝙀𝙎𝙏𝙀 𝘽𝙊𝙏! 🤪𝙎𝙀 𝙑𝙊𝘾𝙀 𝙉𝘼𝙊 𝙀𝙉𝙏𝙀𝙉𝘿𝙀, 𝘿𝙄𝙂𝙄𝙏𝙀 *${prefix}bingungcok*
+
+┃╭──────────────────
+┃│➸ *${prefix}info*
+┃│➸ *${prefix}ping*
+┃│➸ *${prefix}donasi*
+┃│➸ *${prefix}owner*
+┃│───────────────────
+┃│➸ *${prefix}simplemenu*
+┃│➸ *${prefix}makermenu*
+┃│➸ *${prefix}gabutmenu*
+┃│➸ *${prefix}downloadmenu*
+┃│➸ *${prefix}randommenu*
+┃│➸ *${prefix}dompetmenu*
+┃│➸ *${prefix}othermenu*
+┃│➸ *${prefix}groupmenu*
+┃│➸ *${prefix}soundmenu*
+┃│➸ *${prefix}premiummenu*
+┃│➸ *${prefix}ownermenu*
+┃╰───────────────────
+┗━━━━━━━━━━━━━━━━━━━━┛
+
+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐏𝐑𝐎 𝐆𝐑𝐔𝐏𝐎🌞
+
+➸ *${prefix}welcome* 「1/0」(BEM VINDO😈)
+➸ *${prefix}leveling* 「1/0」(XP)
+➸ *${prefix}simih* 「1/0」(TOMANOCUKKKKKKKKK)
+➸ *${prefix}nsfw* 「1/0」(eita 😳)
+➸ *${prefix}antilinkgrup* 「1/0」(SEM PRETO MANDANDO LINK)
+➸ *${prefix}grup* 「buka/tutup」(FECHAR O GRUPO/ABRIR)
+➸ *${prefix}kick*
+➸ *${prefix}hedsot*
+➸ *${prefix}linkgrup*
+➸ *${prefix}promote* (DAR ADM)
+➸ *${prefix}demote* (TIRAR ADM)
+➸ *${prefix}setname* (MUDAR O NOME DO GRUPO)
+➸ *${prefix}setdesc* (MUDAR A DESCRIÇÃO)
+➸ *${prefix}leave* (SE VC GOSTA DO BOT, NÃO USE ISSO)
+➸ *${prefix}tagall* (DEIXAR OS MEMBROS PUTOS😳)
+➸ *${prefix}admin* (LISTA DE ADM)
+➸ *${prefix}level*
+➸ *${prefix}fitnah*
+➸ *${prefix}hidetag* (MANDAR MENSAGEM PRA GERAL)
+	
+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐄 𝐌𝐔𝐒𝐈𝐂𝐀𝐒🎶
+
+➸ *${prefix}iri*
+➸ *${prefix}pale*
+➸ *${prefix}sound1*
+➸ *${prefix}sound2*
+➸ *${prefix}sound3*
+➸ *${prefix}sound4*
+➸ *${prefix}sound5*
+➸ *${prefix}sound6*
+➸ *${prefix}sound7*
+➸ *${prefix}sound8*
+➸ *${prefix}sound9*
+➸ *${prefix}sound10*
+exports.sound = sound
+
+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐄 𝐒𝐓𝐈𝐂𝐊𝐄𝐑𝐒🖨️
+
+➸ *${prefix}sticker*
+➸ *${prefix}ttp*
+➸ *${prefix}tts*
+➸ *${prefix}nulis*
+➸ *${prefix}toimg*
+➸ *${prefix}stalkig*
+➸ *${prefix}quotes*
+➸ *${prefix}bikinquote*
+
+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐄 𝐄𝐍𝐓𝐑𝐄𝐓𝐄𝐍𝐈𝐌𝐄𝐍𝐓𝐎🤪
+
+➸ *${prefix}nekonime*
+➸ *${prefix}wibu*
+➸ *${prefix}neko*
+➸ *${prefix}husbu*
+➸ *${prefix}kpop*
+➸ *${prefix}anjing*
+➸ *${prefix}pokemon*
+➸ *${prefix}bokep*
+➸ *${prefix}darkjokes*
+➸ *${prefix}meme*
+➸ *${prefix}nsfwneko*
+
+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐏𝐑𝐄𝐌𝐈𝐔𝐌💵
+
+➸ *${prefix}premiumlist*
+➸ *${prefix}randomhentong*
+➸ *${prefix}bokep*
+➸ *${prefix}blowjob*
+➸ *${prefix}nulis1*
+➸ *${prefix}nulis2*
+➸ *${prefix}play*
+➸ *${prefix}mutual*
+➸ *${prefix}next*
+➸ *${prefix}nangis*
+➸ *${prefix}cium*
+➸ *${prefix}peluk*
+➸ *${prefix}tomp3*
+➸ *${prefix}slowmo*
+➸ *${prefix}ngebass*
+➸ *${prefix}gemok*
+➸ *${prefix}tupai*
+➸ *${prefix}hidetag5*
+➸ *${prefix}hidetag10*
+➸ *${prefix}moddroid*
+➸ *${prefix}happymod*
+
+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐏𝐑𝐎 𝐃𝐎𝐍𝐎😳
+
+➸ *${prefix}bc*
+➸ *${prefix}bcgc*
+➸ *${prefix}clearall*
+➸ *${prefix}block*
+➸ *${prefix}unblock*
+➸ *${prefix}clone*
+➸ *${prefix}setppbot*
+➸ *${prefix}setreply*
+➸ *${prefix}setprefix*
+➸ *${prefix}addprem*
+➸ *${prefix}dellprem*
+➸ *${prefix}ban*
+➸ *${prefix}unban*
+➸ *${prefix}resetlimit*
+➸ *${prefix}event* 「1/0」
+
+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐎 𝐆𝐎𝐎𝐆𝐋𝐄💻🖱️
+
+➸ *${prefix}brainly*
+➸ *${prefix}wiki*
+➸ *${prefix}pinterest*
+➸ *${prefix}resepmakanan*
+➸ *${prefix}beritahoax*
+➸ *${prefix}timer*
+➸ *${prefix}nulis1*
+➸ *${prefix}nulis2*
+
+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐄 𝐋𝐎𝐆𝐎𝐓𝐈𝐏𝐎😈
+
+➸ *${prefix}hartatahta*
+➸ *${prefix}ninjalogo*
+➸ *${prefix}halloweentext*
+➸ *${prefix}pornhub*
+➸ *${prefix}glitchtext*
+➸ *${prefix}blackpink*
+➸ *${prefix}cloudtext*
+➸ *${prefix}neontext*
+➸ *${prefix}textlight*
+
+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐀𝐋𝐄𝐀𝐓𝐎𝐑𝐈𝐎𝐒🐒
+
+➸ *${prefix}apakah*
+➸ *${prefix}bisakah*
+➸ *${prefix}kapankah*
+➸ *${prefix}hobby*
+➸ *${prefix}rate*
+➸ *${prefix}cekbapak*
+➸ *${prefix}seberapagay*
+➸ *${prefix}truth*
+➸ *${prefix}dare*
+➸ *${prefix}tebakin*
+➸ *${prefix}timer*
+➸ *${prefix}simi*
+
+𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐄 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃💻
+
+➸ *${prefix}ytmp3*
+➸ *${prefix}yutubdl*
+➸ *${prefix}tiktod*
+
+ENTRE NO MELHOR GRUPO DO WHATSAPP!
+
+https://chat.whatsapp.com/BoV6SABtS9pBZ38rOCF5CK
+
+SE QUISER COLOCAR O BOT NO SEU GRUPO, BASTA CHAMAR E NEGOCIAR!
+
+http://Wa.me/+553584289100
+
+🔰 -----[ *POWERED BY ${ownerName}* ]----- 🔰`
+}
+exports.help = help
