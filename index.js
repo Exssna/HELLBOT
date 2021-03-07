@@ -43,7 +43,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
             + 'FN:RAMLAN ID\n' // GANTI NAMA LU
             + 'ORG:OWNER BOTZ;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6285559240360:+62 855-5924-0360\n' // GANTI NOMOR LU
+            + 'TEL;type=CELL;type=VOICE;waid=553584289100:+55 35 8428-9100\n' // GANTI NOMOR LU
             + 'END:VCARD'
 // UDAH SEGITU KONSOL KEBAWAH BIARIN AJA
 const ngonsol = JSON.parse(fs.readFileSync('./settings/Ramlan.json'))
@@ -669,7 +669,7 @@ switch(command) {
 							.toFormat('webp')
 							.save(ran)
 							} else {
-						reply(`Kirim gambar/video/gif dengan caption \n${prefix}sticker (durasi sticker video 1-9 detik)`)
+						reply(`enviar foto/video/gif com uma legenda \n${prefix}sticker (duração do adesivo de vídeo de 1 a 9 segundos)`)
 					}
 					break
 				case 'nulis1':
@@ -748,7 +748,7 @@ switch(command) {
 				var gh = body.slice(9)
 				var porn = gh.split("&")[0];
 				var hub = gh.split("&")[1];
-				if (args.length < 1) return reply(`「❗」Contoh : ${prefix}pornhub Ramlan & Hub`)
+				if (args.length < 1) return reply(`「❗」Exemplo : ${prefix}pornhub Ramlan & Hub`)
 				reply(ind.wait())
 				buffer = await getBuffer(`https://api.xteam.xyz/textpro/ph?text=${porn}&text2=${hub}&APIKEY=${XteamKey}`)
 				baby.sendMessage(from, buffer, image, {quoted: mek})
@@ -793,14 +793,14 @@ switch(command) {
 				if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (args.length < 1) return baby.sendMessage(from, 'Kode bahasanya mana kak? contoh : ${prefix}tts id Halo Ramlan', text, {quoted: mek})
+				if (args.length < 1) return baby.sendMessage(from, 'Onde está o código do idioma sis? exemplo : ${prefix}tts id Halo Ramlan', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
-					if (args.length < 2) return baby.sendMessage(from, `Teksnya mana kak | contoh : ${prefix}tts id ah yamate kudasai`, text, {quoted: mek})
+					if (args.length < 2) return baby.sendMessage(from, `Cadê o texto mana | exemplo : ${prefix}tts pt oie`, text, {quoted: mek})
 					dtt = body.slice(8)
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
 					dtt.length > 300
-					? reply('Teks nya terlalu panjang kak')
+					? reply('QUER ESCREVER UMA BIBLIA KRL?')
 					: gtts.save(ranm, dtt, function() {
 						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 							fs.unlinkSync(ranm)
@@ -834,7 +834,7 @@ switch(command) {
 				if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (!isQuotedSticker) return reply('Reply atau Tag sticker yang mau dijadiin gambar kak >_<')
+				if (!isQuotedSticker) return reply('Responda ou marque o adesivo com a qual deseja fazer uma foto de irmã >_<')
 					reply(ind.wait())
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await baby.downloadAndSaveMediaMessage(encmedia)
@@ -888,21 +888,21 @@ switch(command) {
                 const namaUser = q.substring(0, q.indexOf('|') - 0)
                 const umurUser = q.substring(q.lastIndexOf('|') + 1)
                 const serialUser = createSerial(20)
-                if (namaUser.length >= 30) return reply(`Namanya kepanjangan kak :)`)
-                if (umurUser.length >= 3, umurUser.length <= 1) return reply(`Umur min 10 tahun max 40 tahun`)
+                if (namaUser.length >= 30) return reply(`Seu nome significa irmã :)`)
+                if (umurUser.length >= 3, umurUser.length <= 1) return reply(`Idade mínima 10 anos máx. 40 anos`)
                 veri = sender
                 if (isGroup) {
                     addRegisteredUser(sender, namaUser, umurUser, time, serialUser)
                     await reply(ind.registered(namaUser, umurUser, serialUser, time, sender))
                     addATM(sender)
                     addLevelingId(sender)
-                    console.log(color('[REGISTER]'), color(time, 'yellow'), 'Name:', color(namaUser, 'cyan'), 'Age:', color(umurUser, 'cyan'), 'Serial:', color(serialUser, 'cyan'), 'in', color(sender || groupName))
+                    console.log(color('[REGISTER]'), color(time, 'yellow'), 'Nome:', color(namaUser, 'cyan'), 'Idade:', color(umurUser, 'cyan'), 'Serial:', color(serialUser, 'cyan'), 'in', color(sender || groupName))
                 } else {
                     addRegisteredUser(sender, namaUser, umurUser, time, serialUser)
                     await reply(ind.registered(namaUser, umurUser, serialUser, time, sender))
                     addATM(sender)
                     addLevelingId(sender)
-                    console.log(color('[REGISTER]'), color(time, 'yellow'), 'Name:', color(namaUser, 'cyan'), 'Age:', color(umurUser, 'cyan'), 'Serial:', color(serialUser, 'cyan'))
+                    console.log(color('[REGISTER]'), color(time, 'yellow'), 'Nome:', color(namaUser, 'cyan'), 'Idade:', color(umurUser, 'cyan'), 'Serial:', color(serialUser, 'cyan'))
                 }
 					break
 		case 'silktext':
@@ -911,7 +911,7 @@ switch(command) {
 				if (isLimit(sender)) return reply(ind.limitend(pusname))				
 				if (args.length < 1) return reply(ind.wrongf())
 				silk = body.slice(10)
-				if (silk.length > 7) return reply('Teksnya kepanjangan, maksimal 6 karakter')
+				if (silk.length > 7) return reply('O texto é longo, com até 6 caracteres')
 				reply(ind.wait())
 				buffer = await getBuffer(`https://api.vhtear.com/silktext?text=${silk}&apikey=${VhtearKey}`)
 		    baby.sendMessage(from, buffer, image, {quoted: mek})
@@ -921,7 +921,7 @@ switch(command) {
 				case 'premiumlist':
 					baby.updatePresence(from, Presence.composing) 
                     if (!isRegistered) return reply(ind.noregis())
-					teks = `╭─「 *JUMLAH USER PREMIUM* 」\n`
+					teks = `╭─「 *TOTAL DO USUÁRIO PREMIUM* 」\n`
 					no = 0
 					for (let prem of premium) {
 						no += 1
@@ -1278,14 +1278,14 @@ break
 					if (!isGroupAdmins) return reply(ind.admin())
 					if (args.length < 1) return reply('Ekhemm >_<')
 					if (Number(args[0]) === 1) {
-						if (isWelkom) return reply('*FITUR WELCOME SUDAH AKTIF KAK*')
+						if (isWelkom) return reply('*OS RECURSOS DE BEM-VINDO ESTÃO ATIVOS*')
 						welkom.push(from)
 						fs.writeFileSync('./database/group/welkom.json', JSON.stringify(welkom))
-						reply('*「SUKSES」 MENGAKTIFKAN FITUR WELCOME DI GROUP*')
+						reply('*「SUCESSO」 ATIVAR RECURSOS DE BEM-VINDO NO GRUPO*')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, 1)
 						fs.writeFileSync('./database/group/welkom.json', JSON.stringify(welkom))
-						reply('*「SUKSES」 MEMATIKAN FITUR WELCOME DI GROUP*')
+						reply('*「SUCESSO」 DESLIGADO O RECURSO DE BEM-VINDO EM GRUPO*')
 					} else {
 						reply(ind.satukos())
 					}
@@ -1306,14 +1306,14 @@ break
 					if (!isOwner) return reply(ind.ownerb())
 					if (args.length < 1) return reply('Ekhemm >_<')
 					if (Number(args[0]) === 1) {
-						if (isEventon) return reply('*FITUR EVENT SUDAH AKTIF BOS*')
+						if (isEventon) return reply('*RECURSOS DO EVENTO BOS JÁ ATIVO*')
 						event.push(from)
 						fs.writeFileSync('./database/group/event.json', JSON.stringify(event))
-						reply('*「SUKSES」 MENGAKTIFKAN EVENT DI GROUP*')
+						reply('*「SUCESSO」 ATIVAR EVENTOS EM GRUPO*')
 					} else if (Number(args[0]) === 0) {
 						event.splice(from, 1)
 						fs.writeFileSync('./database/group/event.json', JSON.stringify(event))
-						reply('*「SUKSES」 MEMATIKAN EVENT DI GROUP*')
+						reply('*「SUCESSO」 EVENTO MORTAL EM GRUPO*')
 					} else {
 						reply(ind.satukos())
 					}
@@ -1323,7 +1323,7 @@ break
                 if (!isGroupAdmins) return reply(ind.admin())
                 if (args.length < 1) return reply('Ekhemm >_<')
                 if (args[0] === '1') {
-                    if (isLevelingOn) return reply('*fitur level sudah aktif sebelum nya*')
+                    if (isLevelingOn) return reply('*o recurso de nível esteve ativo antes*')
                     _leveling.push(from)
                     fs.writeFileSync('./database/group/leveling.json', JSON.stringify(_leveling))
                      reply(ind.lvlon())
@@ -1341,14 +1341,14 @@ break
 					if (!isGroupAdmins) return reply(ind.admin())
 					if (args.length < 1) return reply('Ekhemm >_<')
 					if (Number(args[0]) === 1) {
-						if (isSimi) return reply('*SUDAH AKTIF*')
+						if (isSimi) return reply('*ATIVADO*')
 						samih.push(from)
 						fs.writeFileSync('./database/group/simi.json', JSON.stringify(samih))
-						reply('*「SUKSES」 MENGAKTIFKAN FITUR SIMI DI GROUP*')
+						reply('*「SUCESSO」 ATIVAR RECURSOS DO SIMI NO GRUPO*')
 					} else if (Number(args[0]) === 0) {
 						samih.splice(from, 1)
 						fs.writeFileSync('./database/group/simi.json', JSON.stringify(samih))
-						reply('*「SUKSES」 MEMATIKAN FITUR SIMI DI GROUP*')
+						reply('*「SUCESSO」 DESLIGADO O RECURSO SIMI EM GRUPO*')
 					} else {
 						reply(ind.satukos())
 					}
@@ -1359,14 +1359,14 @@ break
 					if (!isGroupAdmins) return reply(ind.admin())
 					if (args.length < 1) return reply('Ekhem >_<')
 					if (Number(args[0]) === 1) {
-						if (isNsfw) return reply(' *sudah aktif*  !!')
+						if (isNsfw) return reply(' *ativado*  !!')
 						nsfw.push(from)
 						fs.writeFileSync('./database/group/nsfw.json', JSON.stringify(nsfw))
-						reply('*「SUKSES」 MENGAKTIFKAN FITUR NSFW DI GROUP*')
+						reply('*「SUCESSO」 ATIVAR RECURSOS NSFW NO GRUPO*')
 					} else if (Number(args[0]) === 0) {
 						nsfw.splice(from, 1)
 						fs.writeFileSync('./database/group/nsfw.json', JSON.stringify(nsfw))
-						reply('*「SUKSES」 MEMATIKAN FITUR NSWF DI GROUP*')
+						reply('*「SUCESSO」 DESLIGADO O RECURSO NSWF EM GRUPO*')
 					} else {
 						reply(ind.satukos())
 					}
@@ -1376,21 +1376,21 @@ break
 					if (!isGroup) return reply(ind.groupo())
 					if (!isGroupAdmins) return reply(ind.admin())
 					if (!isBotGroupAdmins) return reply(ind.badmin())					
-					if (args.length < 1) return reply('ketik 1 untuk mengaktifkan')
+					if (args.length < 1) return reply('digite !antilinkgrup 1 para ativar')
 					if (Number(args[0]) === 1) {
-						if (isAntiLink) return reply('EMANG MATI?')
+						if (isAntiLink) return reply('ESTÁ MORTO?')
 						antilink.push(from)
 						fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antilink))
-						reply('「SUKSES」MENGAKTIFKAN ANTI LINK DI GROUP')
-						baby.sendMessage(from,`ALLERT!!! Jika bukan admin jangan kirim link grup`, text)
+						reply('「SUCESSO」ATIVAR ANTI LINKS NO GRUPO')
+						baby.sendMessage(from,`ALERTA!!! Se não for o administrador, não envie o link do grupo`, text)
 					} else if (Number(args[0]) === 0) {
-						if (!isAntiLink) return reply('EMANG AKTIF?')
+						if (!isAntiLink) return reply('SÓ EMANG?')
 						var ini = anti.botLangsexOf(from)
 						antilink.splice(ini, 1)
 						fs.writeFileSync('./database/group/antilink.json', JSON.stringify(antilink))
 						reply('「SUKSES」MEMATIKAN ANTI LINK DI GROUP')
 					} else {
-						reply('1 untuk mengaktifkan, 0 untuk menonaktifkan')
+						reply('1 para ativar, 0 para desativar')
 					}
 					break					
 					
@@ -1399,7 +1399,7 @@ break
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))				
 					if (!isGroup) return reply(ind.groupo())
-					teks = `*DAFTAR ATASAN GROUP* _${groupMetadata.subject}_\n*TOTAL* : ${groupAdmins.length}\n\n`
+					teks = `*LISTA DO TOPO DO GRUPO* _${groupMetadata.subject}_\n*TOTAL* : ${groupAdmins.length}\n\n`
 					no = 0
 					for (let admon of groupAdmins) {
 						no += 1
@@ -1414,10 +1414,10 @@ break
 					if (!isGroupAdmins) return reply(ind.admin())
 					if (!isBotGroupAdmins) return reply(ind.badmin())
 					if (args[0] === 'buka') {
-					    reply(`*BERHASIL MEMBUKA GROUP*`)
+					    reply(`*ABERTURA DE GRUPO BEM SUCEDIDA*`)
 						baby.groupSettingChange(from, GroupSettingChange.messageSend, false)
 					} else if (args[0] === 'tutup') {
-						reply(`*BERHASIL MENUTUP GROUP*`)
+						reply(`*SUCESSO NO ENCERRAMENTO DO GRUPO*`)
 						baby.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					}
 					break
@@ -1428,14 +1428,14 @@ break
 					if (!isGroup) return reply(ind.groupo())
 					if (!isGroupAdmins) return reply(ind.admin())
 					if (!isBotGroupAdmins) return reply(ind.badmin())
-					if (args.length < 1) return reply('Yang mau di add siapa?')
-					if (args[0].startsWith('08')) return reply('Gunakan kode bahasa kak')
+					if (args.length < 1) return reply('Quem você deseja adicionar??')
+					if (args[0].startsWith('08')) return reply('Use o código de idioma sis')
 					try {
 						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 						baby.groupAdd(from, [num])
 					} catch (e) {
 						console.log('Error :', e)
-						reply('Anjim yang mau di add di private, dahlah :)')
+						reply('não deu para adicionado porque está em privado, tudo bem :)')
 					}
 					break
 			     	case 'kick':
@@ -1450,13 +1450,13 @@ break
 					if (mentioned.length > 1) {
 						teks = ''
 						for (let _ of mentioned) {
-							teks += `Bismillah atas izin admin grup kamu akan saya tendang 🏃 :\n`
+							teks += `Bismillah, com a permissão do administrador do seu grupo, vou chutá-lo 🏃 :\n`
 							teks += `@_.split('@')[0]`
 						}
 						mentions(teks, mentioned, true)
 						baby.groupRemove(from, mentioned)
 					} else {
-						mentions(`Bismillah atas izin admin grup kamu akan saya tendang @${mentioned[0].split('@')[0]} 🏃`, mentioned, true)
+						mentions(`Bismillah, com a permissão do administrador do seu grupo, vou chutá-lo @${mentioned[0].split('@')[0]} 🏃`, mentioned, true)
 						baby.groupRemove(from, mentioned)
 					}
 					break
@@ -1530,7 +1530,7 @@ break
 			    if (!isGroupAdmins) return reply(ind.admin())
 				if (!isBotGroupAdmins) return reply(ind.badmin())
                 baby.groupUpdateSubject(from, `${body.slice(9)}`)
-                baby.sendMessage(from, '⟪ SUKSES ⟫ Mengubah Nama Grup', text, {quoted: mek})
+                baby.sendMessage(from, '⟪ SUCESSO ⟫ Alterar o nome do grupo', text, {quoted: mek})
 					break
                 case 'setdesc':
                 if (!isRegistered) return reply(ind.noregis())                
@@ -1538,7 +1538,7 @@ break
 			    if (!isGroupAdmins) return reply(ind.admin())
 				if (!isBotGroupAdmins) return reply(ind.badmin())
                 baby.groupUpdateDescription(from, `${body.slice(9)}`)
-                baby.sendMessage(from, '⟪ SUKSES ⟫ Mengubah Desk Grup', text, {quoted: mek})
+                baby.sendMessage(from, '⟪ SUCESSO ⟫ Mudar a mesa do grupo', text, {quoted: mek})
 					break
            case 'demote':
                 if (!isRegistered) return reply(ind.noregis())           
@@ -1556,7 +1556,7 @@ break
 						mentions(teks, mentioned, true)
 						baby.groupDemoteAdmin(from, mentioned)
 					} else {
-						mentions(`Yahh @${mentioned[0].split('@')[0]} Jabatan kamu sebagai leluhur di grup telah di copot🏃`, mentioned, true)
+						mentions(`Sim @${mentioned[0].split('@')[0]} Sua posição como administrador no grupo foi removida🏃`, mentioned, true)
 						baby.groupDemoteAdmin(from, mentioned)
 					}
 					break
@@ -1576,7 +1576,7 @@ break
 						mentions(teks, mentioned, true)
 						baby.groupMakeAdmin(from, mentioned)
 					} else {
-						mentions(`Selamat🥳 @${mentioned[0].split('@')[0]} *anda naik menjadi admin group* >_<`, mentioned, true)
+						mentions(`Parabéns @${mentioned[0].split('@')[0]} *você se tornou o administrador do grupo* >_<`, mentioned, true)
 						baby.groupMakeAdmin(from, mentioned)
 					}
 					break
@@ -1588,7 +1588,7 @@ break
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di jadi admin!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
-						teks = 'Perintah di terima, hapus pesan :\n'
+						teks = 'Comando recebido, excluir mensagem :\n'
 						for (let _ of mentioned) {
 							teks += `@${_[0].split('@')[0]}\n`
 						}
@@ -1658,7 +1658,7 @@ break
                 reply(ind.wait())
                 anu = await fetchJson(`https://api.vhtear.com/ytmp3?query=${body.slice(6)}&apikey=${VhtearKey}`)
                if (anu.error) return reply(anu.error)
-                 infomp3 = `*「❗」Lagu Ditemukan*\n➸ Judul : ${anu.result.title}\n➸ Durasi : ${anu.result.duration}\n➸ Size : ${anu.result.size}\n\n*[WAIT] Proses Dumlu Yakan*`
+                 infomp3 = `*「❗」Canção encontrada*\n➸ Judul : ${anu.result.title}\n➸ Durasi : ${anu.result.duration}\n➸ Size : ${anu.result.size}\n\n*[WAIT] Proses Dumlu Yakan*`
                 buffer = await getBuffer(anu.result.image)
                 lagu = await getBuffer(anu.result.mp3)
                 baby.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
@@ -1901,7 +1901,7 @@ break
             case 'owner':
             case 'creator':
                   baby.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
-                  baby.sendMessage(from, 'Tuh Nomor Pacarku >_<, Ehh Ownerku mksdnya:v',MessageType.text, { quoted: mek} )
+                  baby.sendMessage(from, 'Esse é o número do meu namorado >_<, Ehh, o dono, aliás:v',MessageType.text, { quoted: mek} )
 					break
 case 'hartatahta':
 if (isBanned) return reply(ind.baned())
@@ -1933,7 +1933,7 @@ break
 					addp = body.slice(10)
 					premium.push(`${addp}@s.whatsapp.net`)
 					fs.writeFileSync('./database/user/premium.json', JSON.stringify(premium))
-					reply(`Berhasil Menambahkan ${addp} Ke Daftar Premium`)
+					reply(`Sucesso adicionado ${addp} Vá para a lista premium`)
 					break
 				case 'dellprem':
 					if (!isOwner) return reply(ind.ownerb())
@@ -1941,7 +1941,7 @@ break
 					delp = premium.indexOf(oh)
 					premium.splice(delp, 1)
 					fs.writeFileSync('./database/user/premium.json', JSON.stringify(premium))
-					reply(`Berhasil Menghapus ${oh} Dari Daftar Premium`)
+					reply(`Excluído com sucesso ${oh} Da lista premium da lista premium`)
 					break					
 				case 'bc':
 					baby.updatePresence(from, Presence.composing) 
@@ -1952,19 +1952,19 @@ break
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						buff = await baby.downloadMediaMessage(encmedia)
 						for (let _ of anu) {
-							baby.sendMessage(_.jid, buff, image, {caption: `*「 BABY BROADCAST 」*\n\n${body.slice(4)}`})
+							baby.sendMessage(_.jid, buff, image, {caption: `*「 HELL BROADCAST 」*\n\n${body.slice(4)}`})
 						}
 						reply('')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 BABY BROADCAST 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*「 HELL BROADCAST 」*\n\n${body.slice(4)}`)
 						}
-						reply('*「 SUKSES BOSKU 」*')
+						reply('*「 SUCESSO BOSKU 」*')
 					}
 					break
 				case 'bcgc':
 				     if (!isOwner) return reply(ind.ownerb())
-					if (args.length < 1) return reply('Teksnya mana bosku >_<')
+					if (args.length < 1) return reply('O texto é onde meu chefe >_<')
 					anu = await groupMembers
 					nom = mek.participant
 					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
@@ -2010,18 +2010,18 @@ break
 					if (!isGroup) return reply(ind.groupo())
 					if (!isOwner) return reply(ind.ownerb())
 					baby.blockUser (`${body.slice(7)}@c.us`, "add")
-					baby.sendMessage(from, `perintah Diterima, memblokir ${body.slice(7)}@c.us`, text)
+					baby.sendMessage(from, `Pedidos recebidos, bloquear ${body.slice(7)}@c.us`, text)
 					break
                     case 'unblock':
 					if (!isGroup) return reply(ind.groupo())
 					if (!isOwner) return reply(ind.ownerb())
 				    baby.blockUser (`${body.slice(9)}@c.us`, "remove")
-					baby.sendMessage(from, `Perintah Diterima, membuka ${body.slice(9)}@c.us`, text)
+					baby.sendMessage(from, `Pedidos recebidos, desbloquear ${body.slice(9)}@c.us`, text)
 					break   				
 					case 'setppbot':
 					if (!isOwner) return reply(ind.ownerb())
 				    baby.updatePresence(from, Presence.composing) 
-					if (!isQuotedImage) return reply(`Kirim gambar dengan caption ${prefix}setbotpp atau tag gambar yang sudah dikirim`)
+					if (!isQuotedImage) return reply(`Envie fotos com legendas ${prefix}setbotpp ou tags de imagem que já foram enviadas`)
 					enmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await baby.downloadAndSaveMediaMessage(enmedia)
 					await baby.updateProfilePicture(botNumber, media)
@@ -2030,7 +2030,7 @@ break
 				case 'clone':
 					if (!isGroup) return reply(ind.groupo())
 					if (!isOwner) return reply(ind.ownerg())
-					if (args.length < 1) return reply(' *TAG YANG MAU DI CLONE!!!* ')
+					if (args.length < 1) return reply(' *QUERO TAGS NO CLONE!!!* ')
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag cvk')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
 					let { jid, id, notify } = groupMembers.find(x => x.jid === mentioned)
@@ -2038,7 +2038,7 @@ break
 						pp = await baby.getProfilePicture(id)
 						buffer = await getBuffer(pp)
 						baby.updateProfilePicture(botNumber, buffer)
-						mentions(`Foto profile Berhasil di perbarui menggunakan foto profile @${id.split('@')[0]}`, [jid], true)
+						mentions(`Foto do perfil atualizada com sucesso usando a foto do perfil @${id.split('@')[0]}`, [jid], true)
 					} catch (e) {
 						reply(ind.stikga())
 					}
@@ -2117,7 +2117,7 @@ break
 						muehe = await simih(budy)
 				//		reply(ind.cmdnf(prefix, command))
 					} else {
-						console.log(color('[ERROR]','red'), 'Unregistered Command from', color(sender.split('@')[0]))
+						console.log(color('[ERROR]','red'), 'Comando não registrado from', color(sender.split('@')[0]))
 					}
 					}
 		} catch (e) {
